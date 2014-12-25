@@ -1,5 +1,5 @@
 html {
-  background-color: white;
+  background-color: #87cefa;
 }
 
 #profile {
@@ -33,6 +33,5 @@ html {
   padding: 0px 50px 0px 50px;
   border-right: 1px solid green;
   border-left: 1px solid green;
-  background-color: #87cefa;
 
 }
