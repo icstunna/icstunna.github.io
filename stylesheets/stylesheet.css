@@ -6,6 +6,6 @@ body {
   background-position: left top;
 }
 
-.directory {
+header ul, header li {
   display: inline-block;
 }
