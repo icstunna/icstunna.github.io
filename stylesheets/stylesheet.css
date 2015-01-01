@@ -9,6 +9,6 @@ body {
 header ul, header li {
   display: inline-block;
   font-size: 30px;
-  margin-left: auto;
+  text-align: right;
 
 }
