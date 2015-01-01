@@ -7,5 +7,5 @@ body {
 }
 
 .directory {
-  display: table-header-group;
+  display: inline-block;
 }
