@@ -5,3 +5,7 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
 }
+
+.directory {
+  display: inline;
+}
