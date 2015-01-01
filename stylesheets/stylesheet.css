@@ -12,3 +12,7 @@ header ul, header li {
   text-align: right;
 
 }
+
+header ul {
+  float: right;
+}
