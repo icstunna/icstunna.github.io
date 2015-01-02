@@ -5,7 +5,7 @@ html {
 header ul, header li {
   display: inline-block;
   font-size: 30px;
-  text-align: right;
+  text-align: left;
 }
 
 #profile {
@@ -39,5 +39,4 @@ header ul, header li {
   padding: 0px 50px 0px 50px;
   border-right: 1px solid green;
   border-left: 1px solid green;
-
 }
