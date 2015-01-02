@@ -28,5 +28,6 @@ footer ul {
 }
 
 section {
-  margin-left: 100px;
+  margin-left: 300px;
+  clear: right;
 }
