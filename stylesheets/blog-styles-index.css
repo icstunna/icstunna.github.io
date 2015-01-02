@@ -10,6 +10,7 @@ header ul, header li {
 
 header ul {
   float: right;
+  margin-right: 100px;
 }
 
 #profile {
