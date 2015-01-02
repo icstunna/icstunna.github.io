@@ -16,3 +16,10 @@ header ul, header li {
 header ul {
   float: right;
 }
+
+footer ul, footer li {
+  display: inline-block;
+  text-align: left;
+
+}
+
