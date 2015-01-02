@@ -13,6 +13,14 @@ header ul {
   margin-right: 100px;
 }
 
+sidebar ul, sidebar li {
+  display: list-item;
+}
+
+sidebar ul {
+  float: left;
+}
+
 #profile {
   border: 1px solid red;
   padding: 65px;
