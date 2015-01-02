@@ -8,6 +8,10 @@ header ul, header li {
   text-align: right;
 }
 
+header ul {
+  float: right;
+}
+
 #profile {
   border: 1px solid red;
   padding: 65px;
