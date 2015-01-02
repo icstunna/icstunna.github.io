@@ -6,11 +6,6 @@ body {
   background-position: left top;
 }
 
-header {
-  width: 100%;
-  margin-left: 500px;
-}
-
 header ul, header li {
   display: inline-block;
   font-size: 30px;
@@ -30,4 +25,8 @@ footer ul, footer li {
 
 footer ul {
   float: right;
+}
+
+section {
+  clear: both;
 }
