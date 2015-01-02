@@ -19,6 +19,7 @@ sidebar ul, sidebar li {
 
 sidebar ul {
   float: left;
+  margin-top: 300px;
 }
 
 #profile {
