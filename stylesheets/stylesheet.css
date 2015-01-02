@@ -22,3 +22,7 @@ footer ul, footer li {
   text-align: right;
 
 }
+
+foot ul {
+  float: left;
+}
