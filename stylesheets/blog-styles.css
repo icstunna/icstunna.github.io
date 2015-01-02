@@ -2,6 +2,18 @@ html {
   background-color: #87cefa;
 }
 
+
+header ul, header li {
+  display: inline-block;
+  font-size: 30px;
+  text-align: right;
+}
+
+header ul {
+  float: right;
+  margin-right: 100px;
+}
+
 #profile {
   border: 1px solid red;
   padding: 65px;
