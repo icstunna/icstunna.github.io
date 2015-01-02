@@ -26,9 +26,12 @@ footer ul, footer li {
 
 footer ul {
   float: right;
+  margin-right: 100px;
 }
 
 section {
   margin-left: 300px;
+  margin-right: 100px;
   clear: right;
+
 }
