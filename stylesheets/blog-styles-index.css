@@ -43,4 +43,5 @@ header ul {
   padding: 0px 50px 0px 50px;
   border-right: 1px solid green;
   border-left: 1px solid green;
+  clear: right;
 }
