@@ -2,6 +2,10 @@ html {
   background-color: #87cefa;
 }
 
+.image {
+  width: 1000px;
+  height: 1000px;
+}
 
 header ul, header li {
   display: inline-block;
