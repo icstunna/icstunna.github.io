@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-styles.css">
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li>
+        <a href="http://icstunna.github.io">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          About Me
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Contacts
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <div id="profile">
+  <img src="" />
+  </div>
+
+  <div>
+  <h1 id="title">Technical Blog 3</h1>
+  <h2 id="sub">Hashes versus Arrays</h2>
+  <h4 id="date">January 11, 2015</h4>
+  </div>
+
+  <div id="text">
+    <p>
+      First we'll start with Arrays. Arrays are a list of values / objects. Each value / object in the array is like a variable.
+
+      Example:
+      array_x = [1, 2, 3]
+
+      The array X has a list of numbers (1,2,3). An array keeps track of these objects through use of an index with a base of 0. In order to access these elements you can call on the array by calling the index value.
+
+      Example:
+
+      array_x[0] = 1
+      array_x[2] = 2
+    </p>
+    <p>
+      Hashes are similar to arrays in that they create lists. The major difference is that instead of using an index for their values / objects. Hashes use a key per value system. This means that they can use arbitrary objects to symbolize values in the list.
+
+      Example:
+
+      hash_y ={
+        "age" => 26
+        "hometown" => "Phoenix"
+        "state" => "AZ"
+
+      }
+
+      In order to access hashes you must use the key that is associated with the value you are trying to retrieve.
+
+      Example:
+
+      hash_y["age"] = 26
+      hash_y["state"] = "AZ"
+
+      This allows you to retrieve data by associating it to another object.
+    </p>
+    <p>
+      The difference between Hashes and Arrays are clear but the time and occassion to use them can be confusing. Hashes are best used when you wish to associate a value to a certain object like in the age and state example above.
+
+      Arrays are best used when you wish to create an ordered list where association is not need but more simple organization and indexing.
+    </p>
+  </div>
+</body>
+
