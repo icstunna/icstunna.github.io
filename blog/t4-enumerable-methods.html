@@ -1,0 +1,81 @@
+<!--t4-enumerable-methods.html-->
+
+<!DOCTYPE html>
+<head>
+  <title>Week 4 Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-styles.css">
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li>
+        <a href="http://icstunna.github.io">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          About Me
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Contacts
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <div id="profile">
+  <img src="" />
+  </div>
+
+  <div>
+  <h1 id="title">Technical Blog 4</h1>
+  <h2 id="sub">Enumerable Method "group_by"</h2>
+  <h4 id="date">January 17, 2015</h4>
+  </div>
+
+  <div id="text">
+    <p>
+      Enumerables are an object that have a collection of other objects. Enumerables are unique from other objects in Ruby because they enter into a contract with other objects in order to allow access to a set of behaviors that affect the collection of objects. These behaviors or methods are called Enumerators. Enumerators are methods that take action on an enumerator by iterating an action through a collection of objects.
+    </p>
+
+    <p>
+      One method that we're going to be looking at is called ".group_by". This is a method that has a built ".each" method within it. This means that it takes a collection of elements in a enumerable and performs a certain task to it. In this case it groups them according to the criteria within the block code of the method. It then returns them as a hash with unique keys and values represting the criteria that you ran through each element in the collection.
+    </p>
+
+    <p>
+      One such example is as follows. Say you have a range of numbers from 1 through 20 and you want to sort them according to objects that are divisible by 4. Here is your code:
+    </p>
+    <p>
+      x = (1..20).group_by do |divisor| divisor/4 end
+    </p>
+
+    <p>
+      What the above is saying is take that range and run it through the method group_by. As you run it through the method, use the criteria to group each element and return to me a hash called x.
+    </p>
+
+    <p>
+      The output is:
+    </p>
+
+    <p>
+      x = {0=>[1, 2, 3], 1=>[4, 5, 6, 7], 2=>[8, 9, 10, 11], 3=>[12, 13, 14, 15], 4=>[16, 17, 18, 19], 5=>[20]}
+    </p>
+
+    <p>
+      This returns a hash with keys that symbolize the number of times an object within the range is divisable by 4. It then takes those objects and assigns them to the key that states their divisability and groups them objects in an array in that key.
+    </p>
+  </div>
+</body>
+
+
