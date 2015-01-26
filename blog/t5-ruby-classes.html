@@ -42,31 +42,12 @@
 
   <div id="text">
     <p>
-      This week we used Classes to manipulate data for the purposes of a Bingo board. The Class had nested within it a method that took the Bingo board, generated a random number, and paired it with the B, I, N, G, or O column-categories of the board. If the generated number was within the column category then the number in the board would be replaced with an "X".
+      This week we used Classes to manipulate data for the purposes of a Bingo board. The Class had nested within it a method that took the Bingo board, generated a random number, and paired it with the B, I, N, G, or O column-categories of the Bingo board. If the generated number was within the column category then the number in the board would be replaced with an "X".
     </p>
     <p>
-      Classes are used for grouping behaviors / methods for use on ojects defined into that class. Classes are a way to categorize objects and methods. While this is all well and good. What are some practical aspects of classes? Well lets use a gardening example to do this. Say you wanted to model how much longer it would be before the flowers in your garden are at full bloom. A class would be perfect way to model this out.
+      Classes are used for grouping methods for use on ojects defined into that class. Classes simply categorize objects and methods. While this is all well and good. What are some practical aspects of classes? Well lets use a cooking example to do this. Say you wanted to model how long it would take you to cook a steak a certain. A class would be perfect way to model this out.
     </p>
-    <p>
-class Flower_power
-  def initialize(days)
-    @days = days
-  end
-
-  def stage
-    if @days <= 10
-      "Seedling"
-    elsif @days > 10 && @days <= 30
-      "Sapling"
-    elsif @days > 30
-      "Bloom"
-    end
-  end
-end
-
-rose = Flower_power.new(20)
-p rose.stage
-    </p>
+    <img src =""
     <p>
       This class allows you take an input create a new object categorized as class Flower_power and input an argument for the number of days you've been growing the plant. Then as you call the stage method on the object it runs it through the classes proprietary method and returns for you the stage of growth of your flower.
     </p>
