@@ -7,6 +7,11 @@ html {
   height: 1000px;
 }
 
+img.screen_shot {
+  width: 1000px;
+  height: auto
+}
+
 header ul, header li {
   display: inline-block;
   font-size: 30px;
