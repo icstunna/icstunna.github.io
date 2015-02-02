@@ -1,0 +1,81 @@
+<!--t6-oop-concepts.html-->
+<!DOCTYPE html>
+<head>
+  <title>t6-oop-concepts</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-styles.css">
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li>
+        <a href="http://icstunna.github.io">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          About Me
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Contacts
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <div>
+  <h1 id="title">Technical Blog 6</h1>
+  <h2 id="sub">Inheritance versus Composition</h2>
+  <h4 id="date">February 1, 2015</h4>
+  </div>
+
+  <div id="text">
+    <p>
+      Today is February 1st 2015, it is Superbowl Sunday. It is a day competition. The New England Patriots and Seattle Seahawks square off with each other and fight to see who is the greatest however, there is another competition that's occurring. Outside of the glits and glamour, the bright lights and cheering crowds is another competition. A great duel that's been waging with fronts forming and bystanders caught in the middle. The age long debate of Inheritance style programming versus Composition. Each style has its strengths and weaknesses as well as their appropriate time of use. We're going to examine both.
+    </p>
+    <p>
+      Composition style programming is a style of programming that borrows the features of various classes for use on another. Let's try to use some real life objects as an example. Let's say you have one object called Food and you want it to cook. In that case you would need to borrow the characteristics from another class of object like Fire in order to cook class Food.
+    </p>
+    <img class = "screen_shot" href="http://icstunna.github.io/imgs/Composition_Call.png">
+    <p>
+      In the example above we created a class called Element that has a property called cooked. This property prints a statement saying that "This is heated." In the following class we have a class called Food and in the initiation we ask Element for its methods.
+    </p>
+    <img class = "screen_shot" href="http://icstunna.github.io/imgs/Composition_Method.png">
+    <img class = "screen_shot" href="http://icstunna.github.io/imgs/Composition_Outcome.png">
+    <p>
+      We then called the cooked method through Food and as expected we borrow the statement from Element and return "This is heated." This shows that the method was borrowed from Element
+    </p>
+    <p>
+      Inheritance style programming is similar to a parent and child relationship in that the child inherits their traits and characteristics from the parent. In terms of programming applications this means that the child class inherits the methods of the parent class.
+    </p>
+    <img class = "screen_shot" href="http://icstunna.github.io/imgs/Inheritance_Call.png">
+    <p>
+      In the example above we stated that Spaghetti is a child of class Food. We created no other methods for class Spaghetti however, we can still access all the properties / methods of class Food even without indicating it in class Sphaghetti.
+    </p>
+    <img class = "screen_shot" href="http://icstunna.github.io/imgs/Inheritance_Method.png">
+    <img class = "screen_shot" href="http://icstunna.github.io/imgs/Inheritance_Outcome.png">
+    <p>
+      As can be seen the outcome is still similar. We can call on the method cook from Sphaghetti and it requests the method from class Food and returns the same outcome.
+    </p>
+    <p>
+      Both of these styles have their strengths and weaknesses. Inheritance while it may seem more succint has its drawbacks. While being able to access all of the features of the parent class from the childclass it can also potentially borrow all of its weaknesses. It may also be difficult to keep track of where some features come from unless relations are explicitly clear. On the other hand Composition may seem like a longer methodology it has the advantage in that you can select which features you wish to use versus inheriting the entire package.
+    </p>
+    <p>
+      It's generally accepted that inheritance is best used when there are clearly related and reusable pieces of code that fit under a single common concept. Composition on the other hand is best used to package up code or functions that are used in many different and unrelated classes. Please use your own discretion when using either and you can decide which you prefer.
+    </p>
+
+
+  </div>
+</body>
+
+
