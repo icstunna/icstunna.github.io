@@ -41,12 +41,54 @@
 
   <div id="text">
     <p>
-      This week was my cohorts first chance to use Javascript. My first impression of Javascript was that it seemed very light, by that I mean that the syntax was less rigid then that of Ruby. Ruby had a lot of explicit declarations for things such as class and defining of methods, on top of this there was a lot of explicit order of operations when using certain built in methods such as ".each" on arrays / enumerables. Javascript on the other hand seemed to be very permissive with interchanging the use of functions. What does this mean? It means that functions seemed to be the universal form of declaring a set of actions with no real order of operations like that of ".each" or formal declarations other then the calling of function itself.
+      This week was my cohort's first chance to use Javascript. My first impression of Javascript was that it seemed nimble, by that I mean that the syntax by comparison to Ruby was less rigid. Ruby has a lot of explicit declarations for things such as classes and definition of methods. On top of this, there are explicit order of operations when using built in methods such as ".each" on arrays and enumerables. Javascript on the other hand seemed to be very permissive changing how and when to use functions (the equivelant of defining methods for Ruby). What does this mean? It means that functions seem to be the universal form of declaring a set of actions with no real order of operations like that of ".each" or formal declarations other then the calling of the function itself.
     </p>
     <p>
-      I'm going to try to use an example in both Ruby and Javascript on this one. This week we had an assignment to create a game on Javascript based on the knowledge we've learned this week. I wanted to keep the game simple but applicable to a game in the real world. This week I chose to make a blackjack game. The first example I'll show you is how I created a blackjack game on Ruby then I'll compare that to my blackjackgame in Javascript.
+      I'm going to try to use an example in both Ruby and Javascript on this one. This week we had an assignment to create a game on Javascript. I wanted to keep the game simple but applicable to a game in the real world. I chose to make a blackjack game. The first example I'll show you is how I created a blackjack game on Ruby then I'll compare that to my blackjackgame in Javascript.
     </p>
     <img class = "screen_shot" src = "http://icstunna.github.io/imgs/tech_blog_blackjack/ruby_version/player_and_dealer.png">
+    <p>
+      In Ruby, the first thing I did was create a class to indicate that the object that I was creating was a "Game" class. I then stated that within that class I want 2 actions / methods to be called upon. I want the class to "play" to symbolize the action a player takes while playing Blackjack. For example the player will either "hit" or "hold". The other action is for the class to "deal". This symbolizes the actions of the players opponent "the dealer" to deal his hand for later comparison against "the player."
+    </p>
+    <img class = "screen_shot" src = "http://icstunna.github.io/imgs/tech_blog_blackjack/ruby_version/determines_winner.png">
+    <p>
+      I then created a second class called "Winner" to determine the winner between the "player" and the "dealer". I used composition style development to initialize a new "Game" class object within my "Winner" class. This is in order to allow me access to "Game" class methods from with the "Winner" class.
+    </p>
+    <p>
+      I then created a method within the "Winner" class which compared the values returned from the method "game.play" representing "the players hand" and the method "game.deal" representing "the dealers hand". I then stored those values in instance variables and ran them through conditional statements to determine my winner.
+    </p>
+    <p>
+      The following are all the possible outcomes:
+    </p>
+    <img class = "screen_shot" src = "http://icstunna.github.io/imgs/tech_blog_blackjack/ruby_version/test_code.png"><!--reserved for out images-->
+    <img class = "screen_shot" src = "http://icstunna.github.io/imgs/tech_blog_blackjack/ruby_version/Blackjack.png"><!--reserved for out images-->
+    <img class = "screen_shot" src = "http://icstunna.github.io/imgs/tech_blog_blackjack/ruby_version/player_bust.png"><!--reserved for out images-->
+    <img class = "screen_shot" src = "http://icstunna.github.io/imgs/tech_blog_blackjack/ruby_version/dealer_wins.png"><!--reserved for out images-->
+    <img class = "screen_shot" src = "http://icstunna.github.io/imgs/tech_blog_blackjack/ruby_version/dealer_busts.png"><!--reserved for out images-->
+    <p>
+      As promised below is my comparison of my blackjack game in Javascript:
+    </p>
+    <img class = "screen_shot" src="http://icstunna.github.io/imgs/tech_blog_blackjack/javascript_version/player_and_dealer.png">
+    <p>
+       In Javascript, instead of having to declare classes or methods I merely said that I want to create a function and in that function I want these commands to be executed. I then gave it similar conditions to my "play" and "deal" methods from Ruby. I then set them equal to a variable which I declared as variables called "play" and "deal". I will call upon these variables upon a later a point which will give me access to my functions.
+    </p>
+    <img class = "screen_shot" src="http://icstunna.github.io/imgs/tech_blog_blackjack/javascript_version/determines_winner.png">
+    <p>
+      Then similar to Ruby in design, I created a 3rd function. It accepts one argument which I'll show below.
+    </p>
+    <img class = "screen_shot" src="http://icstunna.github.io/imgs/tech_blog_blackjack/javascript_version/test_code.png">
+    <p>
+      I called upon the "play()" function above and set it as a parameter in my "winner()" function. It then ran through the conditionals set in my "winner()" function and used the variables outsdie the "winner()" function to determine a winner.
+    </p>
+    <p>
+      The reason I believe JS seems lighter is because my variables and functions can be called upon with needing to create a new object within my function to give me access to those variables and functions. This may seem confusing but bare with me on this one.
+    </p>
+    <p>
+      What I'm refering to is the un-necessity for me to create a new object that declares its class before I am able to access its methods. This is referring to my composition design. My "play()" function and "deal()" function were ran in my "winner()" function without needing to say "randomObject = thisClass.new". This also meant that I didn't have to create new variables to set equal to the other classes methods in order to return their values ie: "@phand = @game.play" or "@dhand = @game.deal". I merely had to call upon the variable that stored those values in this case "playerHand" or "dealerHand".
+    </p>
+    <p>
+      I think the agile coding in Javascript is nice for simplicity and ease of development however I do so see the virtues of creating explicit classes and methods that are only accessible within those confines. I would go on to say that Javascript while being more agile would require the programmer to mindful to foresee possible conflicting messages in their programs that Ruby developers may not have to think about due to the design of the language however in terms of agility and ease of use I would say Javascript currently holds that title.
+    </p>
   </div>
 </body>
 
