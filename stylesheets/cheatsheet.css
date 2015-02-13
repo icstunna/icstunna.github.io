@@ -1,0 +1,41 @@
+td {
+  border: 1px solid black;
+}
+th {
+  border: 1px solid black;
+}
+
+H1{
+  text-align: center;
+}
+
+table {
+  margin-left: 10%;
+  width: 80%;
+  border: 1px solid black;
+}
+
+td.code {
+  width: 30%;
+  background-color: black;
+  color: white;
+}
+td.example  {
+  width: 70%;
+}
+
+span.green {
+  color: green;
+}
+
+span.red {
+  color: red;
+}
+
+span.blue {
+  color: lightblue;
+}
+
+span.purple {
+  color: purple;
+}
