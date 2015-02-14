@@ -1,0 +1,67 @@
+<!--t8-tech.html-->
+<head>
+  <title>Week 8 Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-styles.css">
+</head>
+
+<body>
+
+  <header>
+    <ul>
+      <li>
+        <a href="http://icstunna.github.io">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          About Me
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Contacts
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <div>
+  <h1 id="title">Technical Blog 8</h1>
+  <h2 id="sub">What is Rails?</h2>
+  <h4 id="date">February 13, 2015</h4>
+  </div>
+
+  <div id="text">
+    <p>
+      In 2004 David Heinemeier Hansson developed Ruby on Rails or Rails, while working on "Basecamp" a project management tool by 37signals. He released Rails to be open sourced in 2005,and in 2006, Apple announced that it would ship Rails as part of its Leopard operating system. Rails is an open source web application framework that is written in the programming language Ruby. Rails uses best practice software paradigms such as Model View Controller (MVC), Active Record Pattern (ARP) and Convention over Configuration (COC).
+    </p>
+    <p>
+      A MVC is a software architecture that implements user interfaces. The MVC allows the user to use an application in 3 componenets. The user uses a controller in order to make changes to the model / program. Once the input from the user is receive through the controller, the controller then manipulates the model / program with the parameters set by the user. The model / program then takes the information from the controller and updates its state meaning that when there have been changes made it complies to those changes and forwards those changes to the view. The view requests information from the model / program in order to display an output for the user. This whole cycle then loops back to the user.
+    </p>
+    <p>
+      The secondary software architecture in Rails is a Active Record Pattern (ARP). This software stores object data in relational databases. This architecture allows functions from SQL such as Insert, Update and Delete in the program. Using ARP, Rails can create classes that accept objects with values and converts them into SQL commands to stored in a database.
+    </p>
+    <img class="screen_shot" src="http://icstunna.github.io/imgs/Class_Object_toSQL.png">
+    <p>
+      The above is an object being stored in a database.
+    </p>
+    <img class="screen_shot" src="http://icstunna.github.io/imgs/SQL_Equivelant.png">
+    <p>
+      The Ruby code is translated into the SQL code above.
+    </p>
+    <p>
+      Lastly, Rails offers Convention over Configuration(COC), a software design paradigm. This means that the number of decisions that a developer has to make is reduced, thereby simplying the model. As is described by the name, COC makes decisions on behalf of the user based on information already in the program. An example is a database, if one has on object called item, the database would take the naming convention item to create a database named item, it is only when we deviate away from the convention that user input would be required. An example of this would to have a object called item but to name the database inventory. In this case configuration would be used over convention.
+    </p>
+    <p>
+      Ruby on Rails is a powerful that allows for the automation and more importantly, framework of an application to be precreated based on the needs of the designer. This is done through various software architecture techniques and paradigms to create systems of user / model interaction, object / database storage and automation through convention.
+    </p>
+  </div>
+</body>
+
